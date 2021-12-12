@@ -30,11 +30,6 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        switch (jumpTime)
-        {
-         
-            default:
-                break;
-        }
+        transform.Translate(0, jumpTime * Time.deltaTime, 0);
     }
 }
