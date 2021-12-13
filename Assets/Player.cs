@@ -36,6 +36,6 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         rb.AddForce(new Vector2(0, jumpTime));
-        print($"스페이스 바 누른 시간: {jumpTime} / Y포지션 : {transform.position.y}");
+        print($"스페이스 바 누른 시간: {jumpTime}");
     }
 }
