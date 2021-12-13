@@ -37,5 +37,6 @@ public class Player : MonoBehaviour
     {
         rb.AddForce(new Vector2(0, jumpTime));
         print($"스페이스 바 누른 시간: {jumpTime}");
+        //rigidbody의 속력 값 비교해야될지
     }
 }
