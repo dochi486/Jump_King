@@ -1,9 +1,14 @@
-using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public float jumpTime = 20;
+    Rigidbody2D rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
 
     void Update()
@@ -30,6 +35,6 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        transform.Translate(0, jumpTime * Time.deltaTime * 1, 0);
+        rb.AddForce(new Vector2(0, jumpTime));
     }
 }
